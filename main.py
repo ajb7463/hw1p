@@ -1,6 +1,6 @@
-
+# Author: Alexander Barr ajb7463@psu.edu
 letter1 = input("Enter your course 1 letter grade: ")
-credit1 = input("Enter your course 1 credit: ")
+credit1 = float(input("Enter your course 1 credit: "))
 if letter1 == "A":
   grade1 = 4.0
   print("Grade point for course 1 is: 4.0")
@@ -29,7 +29,7 @@ else:
   grade1 = 0
   print("Grade point for course 1 is: 0.0")
 letter2 = input("Enter your course 2 letter grade: ")
-credit2 = input("Enter your course 2 credit: ")
+credit2 = float(input("Enter your course 2 credit: "))
 if letter2 == "A":
   grade2 = 4.0
   print("Grade point for course 2 is: 4.0")
@@ -58,7 +58,7 @@ else:
   grade2 = 0
   print("Grade point for course 2 is: 0.0")
 letter3 = input("Enter your course 3 letter grade: ")
-credit3 = input("Enter your course 3 credit: ")
+credit3 = float(input("Enter your course 3 credit: "))
 if letter3 == "A":
   grade3 = 4.0
   print("Grade point for course 3 is: 4.0")
@@ -86,5 +86,5 @@ elif letter3 == "D":
 else:
   grade3 = 0
   print("Grade point for course 3 is: 0.0")
-finalgrade = (grade1 * credit1 + grade2 * credit2 + grade3 * credit3) / (credit1 + credit2 + credit3)
-input("Your GPA is: {finalgrade}")
+final = (grade1 * credit1 + grade2 * credit2 + grade3 * credit3) / (credit1 + credit2 + credit3)  
+print(f"Your GPA is: {final}")
